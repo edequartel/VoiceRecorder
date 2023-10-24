@@ -91,6 +91,7 @@ struct PlayerBar: View {
     }
 }
 
+
 struct PlayerBar_Previews: PreviewProvider {
     static var previews: some View {
         PlayerBar(audioPlayer: AudioPlayer())

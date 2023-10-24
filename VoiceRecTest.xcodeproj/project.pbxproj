@@ -19,6 +19,7 @@
 		027811D928897A9900A4A61D /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027811D828897A9900A4A61D /* AudioPlayer.swift */; };
 		027811DB28897AD200A4A61D /* RecordingsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027811DA28897AD200A4A61D /* RecordingsList.swift */; };
 		027811DD2889932100A4A61D /* PlayerBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027811DC2889932100A4A61D /* PlayerBar.swift */; };
+		47A510432AE6AA8C001EA90D /* SwiftNFC in Frameworks */ = {isa = PBXBuildFile; productRef = 47A510422AE6AA8C001EA90D /* SwiftNFC */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47A510432AE6AA8C001EA90D /* SwiftNFC in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +151,9 @@
 			dependencies = (
 			);
 			name = VoiceRecTest;
+			packageProductDependencies = (
+				47A510422AE6AA8C001EA90D /* SwiftNFC */,
+			);
 			productName = VoiceRecTest;
 			productReference = 027811B52889753F00A4A61D /* VoiceRecTest.app */;
 			productType = "com.apple.product-type.application";
@@ -177,6 +182,9 @@
 				Base,
 			);
 			mainGroup = 027811AC2889753F00A4A61D;
+			packageReferences = (
+				47A510412AE6AA8C001EA90D /* XCRemoteSwiftPackageReference "SwiftNFC" */,
+			);
 			productRefGroup = 027811B62889753F00A4A61D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -428,6 +436,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		47A510412AE6AA8C001EA90D /* XCRemoteSwiftPackageReference "SwiftNFC" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/1998code/SwiftNFC";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		47A510422AE6AA8C001EA90D /* SwiftNFC */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 47A510412AE6AA8C001EA90D /* XCRemoteSwiftPackageReference "SwiftNFC" */;
+			productName = SwiftNFC;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		027811BC2889753F00A4A61D /* VoiceRecTest.xcdatamodeld */ = {
